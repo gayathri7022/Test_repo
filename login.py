@@ -4,9 +4,9 @@ def log(name,pas):
     if name in dic:
         if len(pas) == 8:
             if pas == dic[name]:
-                print("Login Successful!")
+                return True
             else:
-                print("Incorrect password.")
+                return False
 
         else:
             print("Password length should be 8 characters long.")
