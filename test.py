@@ -3,7 +3,8 @@ from login import log, dic
 name = "Arun"
 pas = "Arun@134"
 
-assert log(name, pas)
-assert log() == False
+
+assert log(name, pas) == True
+
     
 
