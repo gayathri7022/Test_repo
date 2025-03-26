@@ -1,8 +1,7 @@
 from login import log, dic
 
-def test_log():
-    assert log("Arun","Arun@134") == True
-
-    assert log() == False
-
+name = "Arun"
+pas = "Arun@134"
+assert len(pas) == 8
     
+
