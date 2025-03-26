@@ -1,6 +1,8 @@
 pipeline {
-    agent any {
-        stages {
+    agent any{
+
+        stages{
+            
             stage ('Checkout code') {
                 steps {
                     git credentialsId:'MY_PAT', url:'https://github.com/gayathri7022/Test_repo.git', branch:'main'
@@ -30,7 +32,7 @@ pipeline {
 
             stage ('Deploy') {
                 steps {
-                    echo "Deplying Feature"
+                    echo "Deploying Feature"
                     bat '''
                        call venv\\Scripts\\activate
                        pyhton login.py
