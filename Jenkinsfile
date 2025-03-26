@@ -20,9 +20,10 @@ pipeline {
                 }
             }
 
-            stage ('Run') {
+            stage ('Test') {
                 steps {
                     bat '''
+                    pip install pytest
                     call venv\\Scripts\\activate
                     pytest test.py
                     '''

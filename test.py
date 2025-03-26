@@ -1,4 +1,4 @@
-from login import log, dic
+from login import log
 
 name = "Arun"
 pas = "Arun@134"
