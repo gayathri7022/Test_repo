@@ -23,7 +23,6 @@ pipeline {
             stage ('Test') {
                 steps {
                     bat '''
-                    call venv\\Scripts\\activate
                     pytest test.py
                     '''
                 }
