@@ -9,12 +9,12 @@ def log(name,pas):
                 return False
 
         else:
-            return False
+            return "Password length must be of 8 characters long."
 
     else:
-        return False
+        return "Invalid user"
 
 
-res = log("Asha","Asha8838")
+res = log("As","Asha8838")
 print(res)
 
