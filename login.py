@@ -12,4 +12,5 @@ def log(name,pas):
             print("Password length should be 8 characters long.")
 
 
-log("Asha","Asha8838")
+res = log("Asha","Asha8838")
+print(res)
