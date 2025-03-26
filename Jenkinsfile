@@ -12,7 +12,7 @@ pipeline {
             stage ('Install Dependencies') {
                 steps {
                     bat '''
-                        python -m venv venv
+                        python3 -m venv venv
                         call venv\\Scripts\\activate
                         pip install --upgrade pip
                         pip install pytest
@@ -35,7 +35,7 @@ pipeline {
                     echo "Deploying Feature"
                     bat '''
                        call venv\\Scripts\\activate
-                       pyhton login.py
+                       pyhton3 login.py
                        '''
                 }
             }
