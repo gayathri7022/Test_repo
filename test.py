@@ -1,13 +1,13 @@
 from login import log
 
-name = "Arun"
-pas = "Arun@134"
+def test_valid_login():
+    assert log("Arun", "Arun@134") == True
 
-name1 = "Ar"
-pas1 = "Arun@134"
+def test_invalid_username():
+    assert log("hdjds", "Arun@134") == "Invalid user"
 
+def test_wrong_password():
+    assert log("Navya", "27362872") == False
 
-assert log(name, pas) == True
-
-assert log(name1,pas1) == "Invalid user"  
-
+def test_short_password():
+    assert log("Asha", "grfij") == "Password length must be of 8 characters long."
