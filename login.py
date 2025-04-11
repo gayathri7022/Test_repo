@@ -14,6 +14,8 @@ def log(name,pas):
     else:
         return "Invalid user"
 
-log("As","Asha8838")
 log("Arun","Arun@134")
+log("hdjds","Arun@134")
+log("Navya", "27362872")
+log("Asha", "grfijkjh")
 
