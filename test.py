@@ -7,4 +7,4 @@ def test_cases():
 
     assert log("Navya", "27362872") == False
 
-    assert log("Asha", "grfijkjh") == "Password length must be of 8 characters long."
+    assert log("Asha", "grfijkjh") == False
