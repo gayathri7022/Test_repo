@@ -10,4 +10,4 @@ def test_wrong_password():
     assert log("Navya", "27362872") == False
 
 def test_short_password():
-    assert log("Asha", "grfij") == "Password length must be of 8 characters long."
+    assert log("Asha", "grfijkjh") == "Password length must be of 8 characters long."

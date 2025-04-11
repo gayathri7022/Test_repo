@@ -12,8 +12,8 @@ pipeline {
             stage ('Install Dependencies') {
                 steps {
                     bat '''
-                        python -m venv venv
-                        call venv\\Scripts\\activate
+                        "C:\\Users\\mjmnj\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m venv venv
+                        call .\\venv\\Scripts\\activate
                         pip install --upgrade pip
                         pip install pytest
                         '''
@@ -23,7 +23,7 @@ pipeline {
             stage ('Test') {
                 steps {
                     bat '''
-                    call venv\\Scripts\\activate
+                    call .\\venv\\Scripts\\activate
                     pytest test.py
                     '''
                 }
@@ -35,7 +35,7 @@ pipeline {
                     echo "Deploying Feature"
                     bat '''
                        call venv\\Scripts\\activate
-                       pyhton login.py
+                       "C:\\Users\\mjmnj\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" login.py
                        '''
                 }
             }
